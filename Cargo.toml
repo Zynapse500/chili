@@ -1,0 +1,17 @@
+[package]
+name = "chili"
+version = "0.1.0"
+authors = ["Christofer Nolander <christofer.nolander@gmail.com>"]
+build = "build.rs"
+
+[[bin]]
+name = "Chili"
+path = "src/main.rs"
+
+[dependencies]
+crank = {git = "https://github.com/Zynapse500/crank"}
+
+
+
+[target.'cfg(windows)'.build-dependencies]
+winres = "0.1.4"
